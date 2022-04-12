@@ -43,7 +43,7 @@ p {
   width: 90vw;
   height: 90vh;
   margin: 0 auto;
-  padding-top:10vh;
+  padding-top:5vh;
   border-radius: 5px;
   display: flex;
 }
@@ -98,7 +98,7 @@ a:hover {
 }
 
 .header__nav-link-2{
-  border: solid 2px #2F1728;
+  border: solid 1px #2F1728;
   padding: 10px 30px;
   border-radius: 5px;
 }

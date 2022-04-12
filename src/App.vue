@@ -14,6 +14,10 @@ export default {
 </script>
 
 <style>
+a {
+  text-decoration: inherit;
+}
+
 body{
   margin:0;
   background-color: #FFF4DA;
@@ -26,7 +30,7 @@ body{
   text-align: center;
   color: #2c3e50;
   margin: 0;
-  width: 100vw;
+  width: auto;
 }
 
 </style>

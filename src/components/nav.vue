@@ -1,6 +1,6 @@
 <template>
 <header class="header">
-    <router-link class="header__logo" to="/"><img class="logo" src="../assets/logo.png"></router-link>
+    <router-link class="header__logo" to="/"><img class="logo" src="../assets/logo.webp"></router-link>
     <div class="ham-menu" @click="changeVisibility()" :class="{ active: burgerVisibility }">
         <span class="ham-menu__item"></span>
         <span class="ham-menu__item"></span>
@@ -9,20 +9,20 @@
     <nav class="header__nav-wrap" :class="{ open: burgerVisibility }">
         <ul class="header__nav-list" @click="burgerVisibility = false">
             <li class="header__nav-item">
-                <router-link class="header__nav-link" to="/">HOME</router-link>
+                <router-link class="header__nav-link" to="/">Home</router-link>
             </li>
             <li class="header__nav-item">
-                <router-link class="header__nav-link" to="/barnFind">TUTORIALS</router-link>
+                <router-link class="header__nav-link" to="/tut">Tutorials</router-link>
             </li>
-            <router-link class="header__logo" to="/"><img class="logo-two" src="../assets/logo.png"></router-link>
+            <router-link class="header__logo" to="/"><img class="logo-two" src="../assets/logo.webp"></router-link>
             <li class="header__nav-item">
-                <router-link class="header__nav-link" to="/Gallery">VUE</router-link>
-            </li>
-            <li class="header__nav-item">
-                <router-link class="header__nav-link" to="/Contact">NUXT</router-link>
+                <router-link class="header__nav-link" to="/Gallery">Vue</router-link>
             </li>
             <li class="header__nav-item">
-                <router-link class="header__nav-link" to="/Contact">MORE</router-link>
+                <router-link class="header__nav-link" to="/Contact">Nuxt</router-link>
+            </li>
+            <li class="header__nav-item">
+                <router-link class="header__nav-link" to="/Contact">More</router-link>
             </li>
         </ul>
     </nav>
@@ -58,9 +58,9 @@ export default {
     background-color: #FFF4DA;
     color: #2F1728;
     align-items: center;
-    position: fixed;
     box-sizing: border-box;
     z-index: 999;
+    box-shadow: 5px 5px 4px #888888;
 }
 
 

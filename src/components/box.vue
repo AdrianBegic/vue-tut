@@ -86,8 +86,14 @@ a {
   font-size: 1em;
 }
 
-a:hover {
-  color: #666;
+.header__nav-link-1:hover {
+  color: #270FFF;
+  background-color: #FCD819;
+}
+
+.header__nav-link-2:hover {
+  color: #270FFF;
+  border: solid 1px #FCD819;
 }
 
 .header__nav-link-1{
@@ -95,12 +101,16 @@ a:hover {
   padding: 10px 30px;
   border-radius: 5px;
   margin: 50px;
+  font-weight: 700;
+  transition: 0.25s;
 }
 
 .header__nav-link-2{
   border: solid 1px #FF4950;
   padding: 10px 30px;
   border-radius: 5px;
+  font-weight: 700;
+  transition: 0.25s;
 }
 
 @media only screen and (min-width: 768px) {

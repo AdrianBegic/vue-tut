@@ -53,14 +53,14 @@ export default {
 
 #content {
   margin: 20px;
-  background-color: #fff;
-  color: #2F1728;
-  width: 500px;
+  background-color: #2710FF;
+  color: #fff;
+  width: 300px;
   height: fit-content;
   text-align: center;
   cursor: pointer;
   border-radius: 10px;
-  border: solid 4px #2F1728;
+  border: solid 4px #FBD819;
   -moz-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
     -webkit-transition: all .2s ease-in;
@@ -68,8 +68,8 @@ export default {
 }
 
 #content:hover{
-  background: #FE6B71;
-  border: solid 4px #FE6B71;
+  background: #FF4950;
+  border: solid 4px #2710FF;
 }
 
 #thumb {

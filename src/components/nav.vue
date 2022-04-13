@@ -24,6 +24,9 @@
             <li class="header__nav-item">
                 <router-link class="header__nav-link" to="/Contact">More</router-link>
             </li>
+            <li class="header__nav-item">
+                <router-link class="header__nav-link" to="/Login">Login</router-link>
+            </li>
         </ul>
     </nav>
 </header>
@@ -31,11 +34,20 @@
 
 <script>
 /* eslint-disable */
+import { mapGetters } from "vuex";
+import firebase from "firebase";
+
 export default {
     name: 'Nav',
     props: {
         msg: String,
     },
+    computed: {
+    ...mapGetters({
+// map `this.user` to `this.$store.getters.user`
+      user: "user"
+    })
+  },
 
     data() {
         return {
@@ -46,6 +58,16 @@ export default {
         changeVisibility() {
             this.burgerVisibility = !this.burgerVisibility
         },
+        signOut() {
+      firebase
+        .auth()
+        .signOut()
+        .then(() => {
+          this.$router.replace({
+            name: "home"
+          });
+        });
+    }
     },
 }
 </script>
@@ -54,7 +76,7 @@ export default {
 /* stylelint-disable */
 .header {
     display: flex;
-    width: 100%;
+    width: 100vw;
     background-color: #FCD819;
     color: #270FFF;
     align-items: center;
@@ -232,7 +254,7 @@ export default {
     position: relative;
     display: inline-block;
     text-decoration: none;
-    letter-spacing: 0.15em;
+    font-weight: 700;
     color: #270FFF;
 }
 

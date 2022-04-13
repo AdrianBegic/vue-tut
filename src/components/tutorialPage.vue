@@ -97,7 +97,7 @@ export default {
     height: fit-content;
     position: relative;
     top: 5vh;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .title {
@@ -115,7 +115,7 @@ export default {
 }
 
 .text{
-  font-weight: 100;
+  font-weight: 700;
   font-size: 2em;
   padding: 25px;
   line-height: 1.5;

@@ -6,7 +6,7 @@
         style="color: inherit"
       >
         <img :src="tutorials.Thumb" alt="avatar" id="thumb" />
-        <h1>{{ tutorials.Name }} ❯</h1>
+        <h1 class="name">{{ tutorials.Name }} ❯</h1>
       </router-link>
     </div>
   </div>
@@ -55,12 +55,21 @@ export default {
   margin: 20px;
   background-color: #fff;
   color: #2F1728;
-  width: 300px;
+  width: 500px;
   height: fit-content;
   text-align: center;
   cursor: pointer;
   border-radius: 10px;
   border: solid 4px #2F1728;
+  -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+#content:hover{
+  background: #FE6B71;
+  border: solid 4px #FE6B71;
 }
 
 #thumb {
@@ -68,5 +77,9 @@ export default {
 background: radial-gradient(circle, rgba(254,107,113,1) 0%, rgba(47,23,40,1) 82%);
   width: 100%;
   height: 100%;
+}
+
+.name{
+  padding: 10px;
 }
 </style>

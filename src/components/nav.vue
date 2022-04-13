@@ -12,7 +12,7 @@
                 <router-link class="header__nav-link" to="/">Home</router-link>
             </li>
             <li class="header__nav-item">
-                <router-link class="header__nav-link" to="/tut">Tutorials</router-link>
+                <router-link class="header__nav-link" to="/Tutorials">Tutorials</router-link>
             </li>
             <router-link class="header__logo" to="/"><img class="logo-two" src="../assets/logo.webp"></router-link>
             <li class="header__nav-item">

@@ -55,12 +55,12 @@ export default {
 .header {
     display: flex;
     width: 100%;
-    background-color: #FFF4DA;
-    color: #2F1728;
+    background-color: #FCD819;
+    color: #270FFF;
     align-items: center;
     box-sizing: border-box;
     z-index: 999;
-    box-shadow: 5px 5px 4px #888888;
+    position:fixed;
 }
 
 
@@ -233,7 +233,7 @@ export default {
     display: inline-block;
     text-decoration: none;
     letter-spacing: 0.15em;
-    color: #2F1728;
+    color: #270FFF;
 }
 
 @media only screen and (max-width: 959px) {

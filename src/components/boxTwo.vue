@@ -15,7 +15,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .box {
   background-color: inherit;
   width: 90vw;

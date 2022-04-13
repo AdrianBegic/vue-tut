@@ -4,8 +4,8 @@
         <h1 class="title">{{ tutorials.Name }}</h1>
         <img :src="tutorials.imgSplash" />
         <div class="body">
-        <h2 class="title2">{{ tutorials.Para1 }}</h2>
-        <h1>{{ tutorials.Title1 }}</h1>
+        <h2 class="text">{{ tutorials.Para1 }}</h2>
+        <h1 class="title2">{{ tutorials.Title1 }}</h1>
         <h2 class="text">{{ tutorials.Para2 }}</h2>
         <iframe :src="tutorials.Code1" style="width: 100%; height: fit-content" frameborder="0"></iframe>
         <h2 class="text">{{ tutorials.Para3 }}</h2>
@@ -20,7 +20,7 @@
         <iframe :src="tutorials.Code6" style="width: 100%; height: fit-content" frameborder="0"></iframe>
         <h2 class="text">{{ tutorials.Para8 }}</h2>
         <iframe :src="tutorials.Code7" style="width: 100%; height: 1000px" frameborder="0"></iframe>
-        <h1>{{tutorials.Title2}}</h1>
+        <h1 class="title2">{{tutorials.Title2}}</h1>
         <h2 class="text">{{ tutorials.Para9 }}</h2>
         <iframe :src="tutorials.Code8" style="width: 100%; height: fit-content" frameborder="0"></iframe>
         <h2 class="text">{{ tutorials.Para10 }}</h2>
@@ -90,7 +90,7 @@ export default {
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 
 .content {
     width: 100%;
@@ -102,18 +102,21 @@ export default {
 
 .title {
     margin: 0 auto;
+    padding-top: 10vh;
     width: 60vw;
     font-size: 4em;
-    color: #2f1829;
-    font-family: "Abril Fatface", cursive;
+    color: #270FFF;
+    font-family: 'Oswald', sans-serif;
 }
 
 .title2{
-  font-weight: 100;
+  font-size: 4em;
+  color: #FCD819;
 }
 
 .text{
   font-weight: 100;
+  font-size: 2em;
   padding: 25px;
   line-height: 1.5;
 }

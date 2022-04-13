@@ -2,7 +2,7 @@
   <div class="box">
     <div class="text-holder">
       <container class="holder">
-        <h1 class="title">VUE | NUXT Tutorials & More</h1>
+        <h1 class="title">VUE | NUXT Tutorials And More</h1>
         <router-link class="header__nav-link-1" to="/About">Tutorials ❯</router-link>
         <router-link class="header__nav-link-2" to="/About">❯ About</router-link>
       </container>
@@ -26,6 +26,7 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 
 #splash {
   height: auto;
@@ -43,7 +44,6 @@ p {
   width: 90vw;
   height: 90vh;
   margin: 0 auto;
-  padding-top:5vh;
   border-radius: 5px;
   display: flex;
 }
@@ -60,7 +60,7 @@ p {
   float: left;
   width: 50%;
   height: 100%;
-  color: #2F1728;
+  color: #270FFF;
   font-weight: 100;
     display: flex;
   align-items: center;
@@ -73,7 +73,7 @@ p {
 }
 
 .title{
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Oswald', sans-serif;
   font-size: 5em;
   float: right;
   width: 100%;
@@ -82,7 +82,7 @@ p {
 a {
   cursor: pointer;
   text-decoration: none;
-  color: #2F1728;
+  color: #FCD819;
   font-size: 1em;
 }
 
@@ -91,14 +91,14 @@ a:hover {
 }
 
 .header__nav-link-1{
-  background-color: #FE6B71;
+  background-color: #FF4950;
   padding: 10px 30px;
   border-radius: 5px;
   margin: 50px;
 }
 
 .header__nav-link-2{
-  border: solid 1px #2F1728;
+  border: solid 1px #FF4950;
   padding: 10px 30px;
   border-radius: 5px;
 }

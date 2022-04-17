@@ -31,7 +31,25 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+form{
+  display: inline-grid;
+}
+
+input{
+  margin: 10px;
+  font-size: 2em;
+}
+
+button{
+  cursor: pointer;
+  font-size: 2em;
+}
+
+h2{
+  font-size: 3em;
+}
+
 .main {
   position: relative;
   padding-top: 10vh;

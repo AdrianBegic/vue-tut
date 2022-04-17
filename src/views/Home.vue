@@ -29,4 +29,10 @@ export default {
     width: 100%;
     height: 100vh;
   }
+
+  .container{
+    background-color: #1a0cb2;
+    width: 100%;
+    height: 100vh;
+  }
 </style>

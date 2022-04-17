@@ -6,6 +6,7 @@ import tutorialPage from '../components/tutorialPage.vue'
 import Tutorials from '../views/Tutorials.vue'
 import Login from '../components/Login.vue'
 import Dashboard from '../components/Dashboard.vue'
+import More from '../views/More.vue'
 
 const routes = [
   {
@@ -17,6 +18,11 @@ const routes = [
     path: '/Tutorials',
     name: 'Tutorials',
     component: Tutorials
+  },
+  {
+    path: '/More',
+    name: 'More',
+    component: More
   },
   {
     path: '/Login',

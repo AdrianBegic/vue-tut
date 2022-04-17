@@ -3,8 +3,8 @@
     <div class="text-holder">
       <container class="holder">
         <h1 class="title">VUE | NUXT Tutorials And More</h1>
-        <router-link class="header__nav-link-1" to="/About">Tutorials ❯</router-link>
-        <router-link class="header__nav-link-2" to="/About">❯ About</router-link>
+        <router-link class="header__nav-link-1" to="/Tutorials">Tutorials ❯</router-link>
+        <router-link class="header__nav-link-2" to="/More">❯ More</router-link>
       </container>
     </div>
     <div class="img-holder">
@@ -60,7 +60,7 @@ p {
   float: left;
   width: 50%;
   height: 100%;
-  color: #270FFF;
+  color: #fff;
   font-weight: 100;
     display: flex;
   align-items: center;
@@ -88,26 +88,29 @@ a {
 
 .header__nav-link-1:hover {
   color: #270FFF;
-  background-color: #FCD819;
+  background-color: #fff;
 }
 
 .header__nav-link-2:hover {
   color: #270FFF;
-  border: solid 1px #FCD819;
+  background-color: #fff;
 }
 
 .header__nav-link-1{
-  background-color: #FF4950;
+  background-color: #270FFF;
+  color: #fff;
   padding: 10px 30px;
   border-radius: 5px;
   margin: 50px;
   font-weight: 700;
   transition: 0.25s;
+  border: solid 1px #270FFF;
 }
 
 .header__nav-link-2{
-  border: solid 1px #FF4950;
+  border: solid 1px #fff;;
   padding: 10px 30px;
+  color: #fff;
   border-radius: 5px;
   font-weight: 700;
   transition: 0.25s;

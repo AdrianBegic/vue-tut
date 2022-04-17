@@ -16,13 +16,7 @@
             </li>
             <router-link class="header__logo" to="/"><img class="logo-two" src="../assets/logo.webp"></router-link>
             <li class="header__nav-item">
-                <router-link class="header__nav-link" to="/Gallery">Vue</router-link>
-            </li>
-            <li class="header__nav-item">
-                <router-link class="header__nav-link" to="/Contact">Nuxt</router-link>
-            </li>
-            <li class="header__nav-item">
-                <router-link class="header__nav-link" to="/Contact">More</router-link>
+                <router-link class="header__nav-link" to="/More">More</router-link>
             </li>
             <li class="header__nav-item">
                 <router-link class="header__nav-link" to="/Login">Login</router-link>
@@ -77,8 +71,8 @@ export default {
 .header {
     display: flex;
     width: 100vw;
-    background-color: #FCD819;
-    color: #270FFF;
+    background-color: #270FFF;
+    color: #fff;
     align-items: center;
     box-sizing: border-box;
     z-index: 999;
@@ -127,7 +121,7 @@ export default {
 .logo-two{
     position: relative;
     width: 50px;
-    margin-right: 30px;
+    margin-right: 40px;
 }
 
 @media only screen and (max-width: 559px) {
@@ -255,7 +249,7 @@ export default {
     display: inline-block;
     text-decoration: none;
     font-weight: 700;
-    color: #270FFF;
+    color: #fff;
 }
 
 @media only screen and (max-width: 959px) {

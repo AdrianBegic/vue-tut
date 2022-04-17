@@ -1,6 +1,8 @@
 <template>
 <Nav/>
-  <router-view/>
+  <transition name="fade" mode="out-in">
+  <router-view></router-view>
+  </transition>
 </template>
 
 <script>
@@ -25,7 +27,7 @@ a {
 
 body{
   margin:0;
-  background-color: #000;
+  background-color: #fff;
 }
 
 #app {
@@ -38,4 +40,13 @@ body{
   width: auto;
 }
 
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
 </style>

@@ -1,10 +1,12 @@
 <template>
 <div class="content">
     <div v-for="tutorials in tutorials" :key="tutorials.key">
+    <div class="splash">
         <h1 class="title">{{ tutorials.Name }}</h1>
-        <img :src="tutorials.imgSplash" />
+        <img class="img" :src="tutorials.imgSplash" />
+        <h2 class="titleSub">{{ tutorials.Para1 }}</h2>
+    </div>
         <div class="body">
-        <h2 class="text">{{ tutorials.Para1 }}</h2>
         <h1 class="title2">{{ tutorials.Title1 }}</h1>
         <h2 class="text">{{ tutorials.Para2 }}</h2>
         <iframe :src="tutorials.Code1" style="width: 100%; height: fit-content" frameborder="0"></iframe>
@@ -100,18 +102,34 @@ export default {
     font-weight: 300;
 }
 
+.splash{
+    background-color: #270FFF;
+}
+
+.img{
+    width: 25vw;
+}
+
+.titleSub{
+    width:60vw;
+    color: #fff;
+    position: relative;
+    margin: 0 auto;
+    padding: 5vh;
+}
+
 .title {
     margin: 0 auto;
-    padding-top: 10vh;
+    padding: 5vh 5vh ;
     width: 60vw;
     font-size: 4em;
-    color: #270FFF;
+    color: #fff;
     font-family: 'Oswald', sans-serif;
 }
 
 .title2{
   font-size: 4em;
-  color: #FCD819;
+  color: #270FFF;
 }
 
 .text{
@@ -119,10 +137,11 @@ export default {
   font-size: 2em;
   padding: 25px;
   line-height: 1.5;
+  color: #000;
 }
 
 .body{
-  width: 50vw;
+  width: 60vw;
   margin: 0 auto;
   font-weight: 100;
 }

@@ -6,6 +6,7 @@
         <img class="img" :src="tutorials.imgSplash" />
         <h2 class="titleSub">{{ tutorials.Para1 }}</h2>
     </div>
+    <sideBar/>
         <div class="body">
         <h1 class="title2">{{ tutorials.Title1 }}</h1>
         <h2 class="text">{{ tutorials.Para2 }}</h2>
@@ -40,9 +41,13 @@
 import {
     db
 } from "../firebaseDb.js";
+import sideBar from '../components/sideBar.vue'
 
 export default {
     Name: "tutorialPage",
+    components: {
+        sideBar,
+    },
     data() {
         return {
             tutorials: [],
@@ -145,5 +150,7 @@ export default {
   width: 50vw;
   margin: 0 auto;
   font-weight: 100;
+  position: relative;
+bottom: 50vh;
 }
 </style>

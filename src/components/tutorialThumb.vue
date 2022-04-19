@@ -39,7 +39,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #container {
   display: flex;
   -webkit-display: box;
@@ -68,7 +68,8 @@ export default {
 }
 
 #content:hover{
-  background: #FF4950;
+  background: #fff;
+  color: #2710FF;
   border: solid 4px #2710FF;
 }
 

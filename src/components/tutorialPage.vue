@@ -103,15 +103,16 @@ export default {
 }
 
 .splash{
-    background-color: #270FFF;
+    background-color: #1A0CB2;
 }
 
 .img{
     width: 25vw;
+    border-radius: 50px;
 }
 
 .titleSub{
-    width:60vw;
+    width:50vw;
     color: #fff;
     position: relative;
     margin: 0 auto;
@@ -121,7 +122,7 @@ export default {
 .title {
     margin: 0 auto;
     padding: 5vh 5vh ;
-    width: 60vw;
+    width: 50vw;
     font-size: 4em;
     color: #fff;
     font-family: 'Oswald', sans-serif;
@@ -141,7 +142,7 @@ export default {
 }
 
 .body{
-  width: 60vw;
+  width: 50vw;
   margin: 0 auto;
   font-weight: 100;
 }

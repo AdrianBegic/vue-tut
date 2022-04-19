@@ -1,4 +1,5 @@
 <template>
+<h1 class="title">TUTORIALS</h1>
 <div class="box">
 <tutorialThumb/>
 </div>
@@ -21,8 +22,13 @@ export default {
   width: 90vw;
   height: 90vh;
   margin: 0 auto;
-  padding-top:5vh;
   border-radius: 5px;
   display: flex;
+}
+
+.title{
+  width: 100%;
+  font-size: 4em;
+  text-decoration: underline;
 }
 </style>

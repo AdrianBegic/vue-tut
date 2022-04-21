@@ -83,4 +83,21 @@ background: radial-gradient(circle, rgba(254,107,113,1) 0%, rgba(47,23,40,1) 82%
 .name{
   padding: 10px;
 }
+
+@media only screen and (min-width: 768px) {
+  /* tablets and desktop */
+  
+}
+
+@media only screen and (max-width: 767px) {
+  /* phones */
+  #content{
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  /* portrait phones */
+}
 </style>

@@ -36,4 +36,24 @@ export default {
   position: relative;
   top: 10vh;
 }
+
+@media only screen and (min-width: 768px) {
+  /* tablets and desktop */
+}
+
+@media only screen and (max-width: 767px) {
+  /* phones */
+  .thumbs{
+    padding: 2em;
+  }
+
+  .title{
+    font-size: 3em;
+    margin-bottom: 2em;
+  }
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  /* portrait phones */
+}
 </style>

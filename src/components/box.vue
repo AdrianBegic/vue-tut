@@ -49,6 +49,7 @@ p {
 }
 
 .img-holder {
+  position: relative;
   float: right;
   width: 50%;
   height: 100%;
@@ -57,6 +58,7 @@ p {
 }
 
 .text-holder {
+  position: relative;
   float: left;
   width: 50%;
   height: 100%;
@@ -117,47 +119,52 @@ a {
 }
 
 @media only screen and (min-width: 768px) {
-    /* tablets and desktop */
+  /* tablets and desktop */
+  .content {
+    font-size: 1.5em;
+  }
 }
 
 @media only screen and (max-width: 767px) {
-    /* phones */
-    .box{
+  /* phones */
+  .box {
     height: auto;
-    width: 100vw;
+    width: 100%;
     border-radius: 0px;
+    vertical-align: middle;
+    display: inline;
   }
 
-h1 {
-  padding: 5%;
-  font-size: 3em;
-}
-.text-holder{
-  float: none;
-  margin-right:0;
-  width:100%;
-  height: auto;
-  }
-  .img-holder{
-    height: 50%;
-    width:100%;
+  p {
+    font-size: 1.2em;
   }
 
-  .content{
-    padding-bottom: 5%;
+  .text-holder {
+    float: left;
+    margin-right: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
   }
-
-#owen {
-  border-radius: 0px 0px 0px 0px;
-}
-
-  #media-width{
+  .img-holder {
     display: none;
+  }
+
+  .header__nav-link-1{
+  margin: 0 auto;
+  margin-right: 20px;
+  }
+
+  #splash {
+    display: none;
+  }
+
+  .content {
+    font-size: 1.4em;
   }
 }
 
 @media only screen and (max-width: 767px) and (orientation: portrait) {
-    /* portrait phones */
+  /* portrait phones */
 }
-
 </style>

@@ -66,4 +66,28 @@ export default {
     font-size: 2em;
     padding: 20px;
   }
+
+  @media only screen and (min-width: 768px) {
+  /* tablets and desktop */
+}
+
+@media only screen and (max-width: 767px) {
+  /* phones */
+  .content{
+    padding: 0;
+    width: 100%;
+    position: relative;
+    top: 7em;
+  }
+
+  .para{
+    margin: 0 auto;
+    width: 90%;
+    padding: 1em 0;
+  }
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  /* portrait phones */
+}
 </style>

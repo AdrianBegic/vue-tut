@@ -22,7 +22,7 @@
         <h2 class="text">{{ tutorials.Para7 }}</h2>
         <iframe :src="tutorials.Code6" style="width: 100%; height: fit-content" frameborder="0"></iframe>
         <h2 class="text">{{ tutorials.Para8 }}</h2>
-        <iframe :src="tutorials.Code7" style="width: 100%; height: 1000px" frameborder="0"></iframe>
+        <iframe :src="tutorials.Code7" style="width: 100%; height: fit-content" frameborder="0"></iframe>
         <h1 class="title2">{{tutorials.Title2}}</h1>
         <h2 class="text">{{ tutorials.Para9 }}</h2>
         <iframe :src="tutorials.Code8" style="width: 100%; height: fit-content" frameborder="0"></iframe>
@@ -152,5 +152,33 @@ export default {
   font-weight: 100;
   position: relative;
 bottom: 50vh;
+}
+
+@media only screen and (min-width: 768px) {
+  /* tablets and desktop */
+}
+
+@media only screen and (max-width: 767px) {
+  /* phones */
+  .title{
+      font-size: 3em;
+  }
+
+  .img{
+      width: 70vw;
+  }
+
+  .main{
+      display: none;
+  }
+
+  .body{
+      bottom: 0;
+      width: 70vw;
+  }
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  /* portrait phones */
 }
 </style>
